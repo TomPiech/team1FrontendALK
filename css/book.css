@@ -1,0 +1,67 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    gap: 50px;
+    padding: 50px 0;
+}
+.book-container{
+    perspective: 1000px;
+}
+section .book{
+    position: relative;
+    width: 383px;
+    height: 612px;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.2);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+.book img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.book::before{
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 100%;
+    transform-origin: left;
+    background-position: center;
+    transform: rotateY(90deg) rotateX(180deg);
+    background-size: 100%;
+}
+.book.first::before{
+    background-image: url('../img/BookSide.jpeg');
+}
+.book.first::after{
+    background-image: url('../img/BookBack.jpeg');
+}
+.book.second::before{
+    background-image: url('../img/BookSide1.jpeg');
+}
+.book.second::after{
+    background-image: url('../img/BookBack1.jpeg');
+}
+.book::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    background-position: center;
+    transform: rotateY(180deg) translateZ(34px);
+    background-size: 100%;
+   }
+
+.book:hover{
+    transform: rotateY(40deg);
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+}
+.book:active{
+    transform: rotateY(180deg);
+}
