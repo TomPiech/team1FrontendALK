@@ -59,6 +59,37 @@ hr{
   border-radius: 50%;
   min-width: 15vw;
 }
+
+/*footer*/
+
+.footerDown {
+  background-color: black;
+  color: darkgray
+}
+
+.unstyled-list a, .followAs a{
+  color: grey
+}
+
+ul.unstyled-list {
+  list-style: none;
+}
+
+.followAs .unstyled-list a {
+  font-size: 2rem;
+}
+
+.form-group-row .col {
+  background-color: white;
+}
+
+.col-md button{
+  background-color: grey;
+  border-color: grey;
+}
+
+
+
 /*============= SECTION =============*/
 /* 
 .narrow {
