@@ -67,13 +67,27 @@ hr{
   color: darkgray
 }
 
-ul.list a, .followAs a{
+.unstyled-list a, .followAs a{
   color: grey
 }
 
-ul.list {
+ul.unstyled-list {
   list-style: none;
 }
+
+.followAs .unstyled-list a {
+  font-size: 2rem;
+}
+
+.form-group-row .col {
+  background-color: white;
+}
+
+.col-md button{
+  background-color: grey;
+  border-color: grey;
+}
+
 
 
 /*============= SECTION =============*/
